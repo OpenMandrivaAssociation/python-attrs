@@ -7,7 +7,9 @@ Group:		Development/Python
 Url:		https://pypi.org/project/attrs/
 Source0:	https://files.pythonhosted.org/packages/01/b0/3ac73bf6df716a38568a16f6a9cbc46cc9e8ed6fe30c8768260030db55d4/attrs-%{version}.tar.gz
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	python-setuptools
 BuildRequires:	pkgconfig(python)
+BuildRequires:	python2-setuptools
 BuildArch:	noarch
 
 %description
