@@ -1,7 +1,7 @@
 Summary:	Python library for attributes without boilerplate
 Name:		python-attrs
 Version:	17.4.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Python
 Url:		https://pypi.org/project/attrs/
