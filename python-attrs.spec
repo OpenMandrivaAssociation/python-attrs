@@ -1,11 +1,11 @@
 Summary:	Python library for attributes without boilerplate
 Name:		python-attrs
-Version:	17.4.0
-Release:	2
+Version:	18.2.0
+Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		https://pypi.org/project/attrs/
-Source0:	https://files.pythonhosted.org/packages/8b/0b/a06cfcb69d0cb004fde8bc6f0fd192d96d565d1b8aa2829f0f20adb796e5/attrs-%{version}.tar.gz
+Source0:	https://pypi.io/packages/source/a/attrs/attrs-%{version}.tar.gz
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
@@ -37,19 +37,19 @@ cd python2
 python2 setup.py build
 
 cd ../python3
-python setup.py build
+%py_build
 
 %install
 cd python2
 python2 setup.py install --root=%{buildroot}
 
 cd ../python3
-python setup.py install --root=%{buildroot}
+%py_install
 
 %files
 %defattr(0644,root,root,0755)
-%{py_sitedir}/attr
-%{py_sitedir}/*.egg-info
+%{py_puresitedir}/attr
+%{py_puresitedir}/*.egg-info
 
 %files -n python2-attrs
 %{py2_puresitedir}/attr

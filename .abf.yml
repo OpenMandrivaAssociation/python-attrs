@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   attrs-17.4.0.tar.gz: 69720cce49ab349a07f7b007ac5834309c390893
+sources:
+  attrs-18.2.0.tar.gz: 51a52e1afdd9e8c174ac0b65c2905a8360788dd2
