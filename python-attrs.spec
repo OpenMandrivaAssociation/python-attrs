@@ -26,7 +26,7 @@ Python 2.x library for attributes without boilerplate
 
 %prep
 %setup -qn attrs-%{version}
-%apply_patches
+%autopatch -p1
 
 mkdir python2
 mv `ls |grep -v python2` python2
