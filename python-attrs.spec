@@ -1,11 +1,11 @@
 Summary:	Python library for attributes without boilerplate
 Name:		python-attrs
-Version:	20.1.0
+Version:	20.3.0
 Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		https://pypi.org/project/attrs/
-Source0:	https://files.pythonhosted.org/packages/c4/d4/c2b5232ecfc0783c697a81c13efc53a4fe285d4e2c00e0d8aed90495fade/attrs-20.1.0.tar.gz
+Source0:	https://files.pythonhosted.org/packages/f0/cb/80a4a274df7da7b8baf083249b0890a0579374c3d74b5ac0ee9291f912dc/attrs-20.3.0.tar.gz
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python-setuptools
 BuildRequires:	python-pkg-resources
