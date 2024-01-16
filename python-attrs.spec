@@ -1,30 +1,35 @@
+%global module attrs
+
 Summary:	Python library for attributes without boilerplate
-Name:		python-attrs
+Name:		python-%{module}
 Version:	21.4.0
 Release:	3
 License:	MIT
 Group:		Development/Python
 Url:		https://pypi.org/project/attrs/
-Source0:	https://files.pythonhosted.org/packages/source/a/attrs/attrs-%{version}.tar.gz
+Source0:	https://pypi.org/packages/source/a/%{module}/%{module}-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python-setuptools
-BuildRequires:	python-pkg-resources
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+
 BuildArch:	noarch
 
 %description
 Python library for atrributes without boilerplate.
 
+%files
+%{py_puresitedir}/attr
+%{py_puresitedir}/%{module}
+%{py_puresitedir}/%{module}-*.*-info
+
+#----------------------------------------------------------------------
+
 %prep
-%autosetup -n attrs-%{version}
+%autosetup -n %{module}-%{version}
 
 %build
-%py3_build
+%py_build
 
 %install
-%py3_install
+%py_install
 
-%files
-%defattr(0644,root,root,0755)
-%{py_puresitedir}/attr
-%{py_puresitedir}/attrs
-%{py_puresitedir}/*.egg-info
