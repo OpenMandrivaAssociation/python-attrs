@@ -2,8 +2,8 @@
 
 Summary:	Python library for attributes without boilerplate
 Name:		python-%{module}
-Version:	21.4.0
-Release:	3
+Version:	23.2.0
+Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		https://pypi.org/project/attrs/
