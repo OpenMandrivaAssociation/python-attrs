@@ -11,7 +11,9 @@ Source0:	https://pypi.org/packages/source/a/%{module}/%{module}-%{version}.tar.g
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
-
+BuildRequires:	python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(hatch-vcs)
+BuildRequires:	python%{pyver}dist(hatch-fancy-pypi-readme)
 BuildArch:	noarch
 
 %description
