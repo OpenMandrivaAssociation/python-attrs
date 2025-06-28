@@ -1,6 +1,8 @@
+%define	module attrs
+
 Summary:	Python library for attributes without boilerplate
 Name:		python-attrs
-Version:	23.2.0
+Version:	25.3.0
 Release:	1
 License:	MIT
 Group:		Development/Python
