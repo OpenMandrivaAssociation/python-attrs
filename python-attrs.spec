@@ -1,13 +1,13 @@
-%define	module attrs
+%define module attrs
 
-Summary:	Python library for attributes without boilerplate
 Name:		python-attrs
-Version:	25.4.0
+Summary:	Python library for attributes without boilerplate
+Version:	26.1.0
 Release:	1
 License:	MIT
 Group:		Development/Python
-Url:		https://pypi.org/project/attrs/
-Source0:	https://pypi.org/packages/source/a/attrs/attrs-%{version}.tar.gz
+URL:		https://pypi.org/project/attrs/
+Source0:	https://pypi.org/packages/source/a/attrs/attrs-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildSystem:	python
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
@@ -21,5 +21,5 @@ Python library for atrributes without boilerplate.
 
 %files
 %{py_puresitedir}/attr
-%{py_puresitedir}/attrs
-%{py_puresitedir}/attrs-*.*-info
+%{py_puresitedir}/%{module}
+%{py_puresitedir}/%{module}-%{version}.dist-info
