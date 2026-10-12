@@ -3,7 +3,7 @@
 Name:		python-attrs
 Summary:	Python library for attributes without boilerplate
 Version:	26.1.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Python
 URL:		https://pypi.org/project/attrs/
@@ -18,6 +18,10 @@ BuildArch:	noarch
 
 %description
 Python library for atrributes without boilerplate.
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{py_puresitedir}/attr
